@@ -1,0 +1,78 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #c3a7a7;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+   
+}
+
+/* প্রগ্রেসিভভাবে রঙ ভরবে */
+.nav-highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: rgb(114, 8, 73);
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+.navbar ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(11, 8, 8);
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Section Styling */
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 70px;
+}
+
+#home { background: #ffcccc; }
+#about { background: #ffcc99; }
+#services { background: #ffff99; }
+#portfolio { background: #ccff99; }
+#contact { background: #99ffcc; }
